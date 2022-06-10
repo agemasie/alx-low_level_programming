@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-* print_sign -> returns 1 and prints + if n is >0, 0 n=0, -1 n <0
+* print_sign -> returns one and prints +
 * n -> character
+* Returns 1 and prints + if n is >0, 0 n=0, -1 n <0
 */
 
 int print_sign(int n)
