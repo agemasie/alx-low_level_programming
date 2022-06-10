@@ -2,9 +2,7 @@
 
 /**
 * print_sign -> returns 1 and prints + if n is >0, 0 n=0, -1 n <0
-*
-* @c: takes in a character
-* Return: 0 for uppercase, 1 for lowercase
+* n -> character
 */
 
 int print_sign(int n)
