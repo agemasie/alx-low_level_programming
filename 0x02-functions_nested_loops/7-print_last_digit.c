@@ -6,6 +6,8 @@
 * Return: the last digit
 */
 
+	int x;
+
 	int print_last_digit(int n)
 {
 	if (n < 0)
