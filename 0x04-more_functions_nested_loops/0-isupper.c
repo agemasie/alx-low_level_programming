@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
-* reset_to_98 - resets pointer value to 98
-* @n: pointer to reset to 98
-*
-* Return: void
-*/
+ * _isupper - check for uppercase
+ *
+ * Description: Prints t with _putchar
+ * @c: charater
+ * Return: void
+ */
 
-void reset_to_98(int *n)
-
+int _isupper(int c)
 {
-	*n = 98;
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
