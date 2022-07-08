@@ -1,6 +1,6 @@
 #include <stdarg.h>
 /**
- * sum_them_all - returns the sum of all parameters
+ * sum_them_all - returns the sum of all parameter
  * @n: the numbers of arguments being passed through
  * Return: the sum of all parameters
  */
