@@ -1,18 +1,20 @@
 #include "holberton.h"
 
 /**
- * _abs - check the code for Holberton School students.
- *
- * @n: is an integer argument
- *
- * Return: Always 0.
+ * *_strcpy - copy strg to another string
+ * @dest: pointer
+ * @src: poiter
+ * Return: numbers dest
  */
 
-int _abs(int n)
+char *_strcpy(char *dest, char *src)
 {
-	if (n >= 0)
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		return (n);
+		dest[i] = src[i];
 	}
-	return (-n);
+	dest[i] = '\0';
+	return (dest);
 }
