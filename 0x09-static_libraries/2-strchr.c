@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-* _strchr - prints found c
-* @s: pointer to char
-* @c: char params to found
-* Return: *S
+ * _strchr - prints found c
+ * @s: pointer to char
+ * @c: char params to found
+ * Return: *S
 */
 
 char *_strchr(char *s, char c)
@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			return (s + i);
-		}	
+		}
 	}
 	return (0);
 }
