@@ -1,27 +1,32 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * _strpbrk - bytes
- * @s: pointer to char
- * @accept: pointer to char
- * Return: NULL
- */
+* _strstr - function locate
+* @haystack: pointer to char
+* @needle: pointer to char
+* Return: 0
+*/
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int i;
+	char *result = haystack, *fneedle = needle;
 
-	while (*s)
+	while (*haystack)
 	{
-		for (i = 0; accept[i]; i++)
+		while (*needle)
 		{
-			if (*s == accept[i])
+			if (*haystack++ != *needle++)
 			{
-				return (s);
+				break;
 			}
 		}
-		s++;
+		if (!*needle)
+		{
+			return (result);
+		}
+		needle = fneedle;
+		result++;
+		haystack = result;
 	}
-	return (NULL);
+	return (0);
 }
