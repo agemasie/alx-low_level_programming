@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-* _atoi - int
-* @s: pointer
-* Return: int.
-*/
+ * _atoi - int
+ * @s: pointer
+ * Return: int.
+ */
 int _atoi(char *s)
 {
 	int i;
@@ -14,7 +14,7 @@ int _atoi(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
-		sig = sig * -1;
+			sig = sig * -1;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			res = res * 10;
@@ -22,7 +22,7 @@ int _atoi(char *s)
 			brk = 1;
 		}
 		else if (brk == 1)
-		break;
+			break;
 	}
 	res = sig * res;
 	return (res);
